@@ -1,0 +1,62 @@
+* {
+	margin-top: 1em;
+}
+
+.jumbotron{
+	background-color: black !important;
+}
+
+.jumbotron p:not(#james-quote-text):not(#james-wikipedia-page){
+	font-size: 12px !important;
+}
+
+.title {
+	font-family: Lobster;
+	color: white;
+}
+
+.title h1{
+	font-weight: bold;
+}
+
+.title q {
+	color: azure;
+}
+
+#james-bio-container {
+	background-color: white;
+	border-radius: 0.2vw;
+	font-size: 12px;
+}
+
+#james-bio-container:not(h5):not(h4):not(#james-wikipedia-page){
+	color:rgb(70, 108, 139) !important;
+}
+#james-bio-container h4, #james-bio-container h5{
+	color:rgb(185, 60, 77) !important;
+}
+
+
+
+.james-quote {
+	padding-top: 20px;
+}
+
+.james-quote p, .james-quote em{
+	color:rgb(73, 107, 202);
+	font-style: italic;
+}
+
+.james-quote p:nth-child(2){
+	text-align: right;
+}
+
+#james-wikipedia-page{
+	font-size: 14px;
+}
+
+
+
+
+
+
