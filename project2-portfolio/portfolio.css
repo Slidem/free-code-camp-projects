@@ -1,0 +1,217 @@
+/*
+Bootstrap nav bar customization
+
+************* START ***********
+
+*/
+
+.navbar-custom {
+  font-family: 'Fredoka One', cursive;
+  background-color: rgb(221, 124, 33);
+}
+
+.navbar-custom a {
+  color: rgb(247, 241, 223);
+}
+
+.navbar-nav > li > a:hover{
+  background-color: rgb(247, 241, 223);
+  color: rgb(221, 124, 33);
+}
+
+.navbar-nav > li > a:focus{
+  background-color: rgb(247, 241, 223);
+  color: rgb(221, 124, 33);
+}
+
+.navbar-toggle{
+  border: 1px solid white;
+}
+
+.navbar-toggle .icon-bar {
+  border: 1px solid white;
+}
+
+/*
+Bootstrap nav bar customization
+
+************* END ***********
+
+*/
+
+/* TODO!!: Add also jquery listener to increase margin when menu is togleded*/
+
+/*
+  About me section customization
+  ********* START **************
+*/
+
+#about-section{
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid  rgba(95, 62, 60, 0.836);
+}
+
+@media screen and (max-width:235px){
+  #about-section{
+    margin-top: 150px;
+  }
+}
+
+
+#about-me-container {
+  font-family: 'Sniglet', cursive;
+  color: rgba(95, 62, 60, 0.836);
+  
+}
+
+#about-me-container h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#about-me-title{
+  border-bottom: 2px solid  rgba(95, 62, 60, 0.836);
+}
+
+#about-me-description h4 {
+  color: rgb(131, 128, 128);
+  font-size: 20px;
+  padding: 4px;
+}
+
+#about-me-description p {
+  color: rgb(131, 128, 128);
+  font-size: 16px;
+  word-spacing: 3px;
+}
+
+/*
+  About me section customization
+  ********* END **************
+*/
+
+/*
+  Portfolio section customization
+  ********* START **************
+*/
+
+#portfolio-section {
+  padding: 50px;
+  background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url("portfolio-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 2px solid  rgba(143, 124, 123, 0.87);
+}
+
+
+
+#portfolio-title{
+  font-size: 46px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-family: 'Fredoka One', cursive;
+  color: rgb(109, 21, 5);
+}
+
+.project-container-header{
+  font-family: 'Short Stack', cursive;
+  font-size: 10px;
+  background-color: rgb(243, 218, 189);
+  min-height: 80px;
+  padding-top: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.project-container-header a {
+  color: black;
+}
+
+.project-container-header a:hover {
+  color: brown;
+}
+
+.project-git-link{
+  font-size: 36px;
+}
+
+@media screen and (min-width:985px){
+  .project-container{
+    margin-right: 30px;
+  }
+}
+
+.project-container{
+  margin-bottom: 10px;
+}
+
+
+/*
+  Portfolio section customization
+  ********* END **************
+*/
+
+
+/*
+  Contact section customization
+  ********* START **************
+*/
+
+
+#contact-section {
+  padding-top: 50px;
+  word-spacing: 2px;
+  background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url("social-media-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#get-in-touch-email{
+  font-family: 'Fredoka One', cursive;
+  color: rgb(120, 125, 139);
+  padding-bottom: 75px;
+}
+
+#get-in-touch-email h3{
+  font-size: 30px;
+}
+
+#my-email {
+  color: dodgerblue;
+  font-size: 16px;
+}
+
+#social-media-container{
+  font-size: 56px;
+  background-color: rgb(59, 57, 56);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+#social-media-container a {
+  color: white;
+}
+
+#social-media-container h6 {
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/*
+  Contact section customization
+  ********* END **************
+*/
+
+
+
+
+
+
