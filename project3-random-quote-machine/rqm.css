@@ -1,0 +1,54 @@
+* {
+  font-family: 'Bitter', serif;
+}
+
+.description-row{
+  padding: 40px;
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(11, 63, 47);
+}
+
+.api-link{
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  color:rgb(75, 127, 196);
+}
+
+.navbar-fixed-bottom {
+  color: white;
+  background-color: rgb(11, 63, 47);
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.quote-row{
+  color:white;
+  background-color: black;
+  padding: 80px;
+  margin-top: 50px;
+}
+
+.quote-container{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons-container div:nth-child(2) > .btn{
+  margin-top: 80px;
+}
+
+.btn {
+  color:black;
+  background-color: white;
+}
+
+.quote-start{
+  font-size: 36px;
+}
+
+.quote-end{
+  font-size: 36px;
+}

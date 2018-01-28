@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- boostrap and jquerry -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+  <link rel="stylesheet" href="rqm.css">
+  <script src="rqm.js"></script>
+
+  <title>Random quote machine</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row text-center description-row">
+      <div class="row">
+        <h1>Random quote machine build using the following api</h1>
+      </div>
+      <div class="row">
+        <p class="api-link">http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=</p>
+      </div>
+    </div>
+    <div class="row quote-row">
+      <div class="col-md-offset-3 col-md-4 container-fluid quote-container">
+        <div class="row text-left">
+          <p class="quote-start">"</p>
+        </div>
+        <div class="row">
+          <p class="quote"> Random quote.</p>
+        </div>
+        <div class="row text-right">
+            <p class="quote-end">"</p>
+        </div>
+        <div class="row text-right">
+          <p>- <span  class="author">Random author</span></p>
+        </div>
+      </div>
+      <div class="col-md-offset-1 col-md-2 buttons-container container-fluid">
+        <div class="row text-center">
+          <button id="generate-quote" class="btn btn-block"><i class="fa fa-bullseye" aria-hidden="true"></i>&nbsp;&nbsp;Generate</button>
+        </div>
+        <div class="row text-center">
+          <button id="tweet-quote" class="btn btn-block"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;Tweet</button>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-fixed-bottom text-center">2018 by
+      <em>Alexandru Mihai</em>
+    </div>
+    <form target="_blank" action="https://twitter.com/intent/tweet"  method="get" id="tweet-form">
+      <input type="hidden" name="text" id="tweet-input"/>
+      <input type="hidden" name="hashtags" value="quotes"/>
+      <input type="hidden" name="related" value="freecodecamp"/>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
