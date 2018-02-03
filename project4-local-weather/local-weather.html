@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- boostrap and jquerry -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+  <link rel="stylesheet" href="local-weather.css">
+  <script src="local-weather.js"></script>
+
+  <title>Local weather</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row title-row text-center">
+      <h1 class="local-weather-title">Your local weather</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 container-fluid weather-info-container text-center">
+        <div class="row location-row">
+          <h4>Location:
+            <span id="location-name">Iasi</span>
+          </h4>
+        </div>
+        <div class="row status-row">
+          <div class="col-md-offset-3 col-md-3">
+            <p id="status-value"></p>
+          </div>
+          <div class="col-md-3">
+            <img id="status-icon" src=""/>
+          </div>
+        </div>
+        <div class="row degrees-row">
+          <div class="col-md-offset-3 col-md-2">
+            <p><span id="degrees-value"></span><span id="degrees-type">&#8451;</span></p>
+          </div>
+          <div class="col-md-offset-1 col-md-1 button-container"><button id="celsius-button" class="btn btn-circle btn-selected">&#8451;</button></div>
+          <div class="col-md-1 button-container"><button id="ferenheit-button" class="btn btn-circle">&#8457;</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-fixed-bottom text-center">2018 by
+    <em>Alexandru Mihai</em>
+  </div>
+
+</body>
+
+</html>

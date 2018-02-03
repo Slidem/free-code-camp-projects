@@ -1,0 +1,85 @@
+.title-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.local-weather-title {
+
+  font-family: Bitter, sans-serif;
+
+}
+
+.navbar-fixed-bottom {
+  color: white;
+  background-color: rgb(87, 172, 228);
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.weather-info-container{
+  background-color: rgb(87, 172, 228);
+  color:white;
+  border-radius: 15px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.weather-info-container .row{
+  margin-top: 20px;
+}
+
+.location-row h4{
+  font-size: 26px;
+}
+
+#location-name {
+  font-weight: bold;
+}
+
+.status-row {
+  font-size: 24px;
+}
+
+.degrees-row{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  color:black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn:focus {
+  outline:0 !important;
+}
+
+.btn:hover {
+  outline:none;
+}
+
+.btn-circle {
+  border-radius: 50%;
+}
+
+.btn:hover, .btn:focus, .btn-selected{
+  color:white;
+  background-color: black;
+}
+
+.button-container{
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 995px) {
+  .button-container{
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .button-container{
+    padding-top: 10px;
+  }
+}
