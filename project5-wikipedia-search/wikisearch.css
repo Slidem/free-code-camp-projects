@@ -1,0 +1,96 @@
+.empty-row-expanded{
+  height: 300px;
+}
+
+.empty-row-minimized {
+  height: 50px;
+}
+
+body {
+  background-color: rgb(187, 136, 212);
+  font-family: 'Encode Sans', sans-serif;
+}
+
+button {
+  border-radius: 0px !important;
+}
+
+@media screen and (min-width:995px){
+
+  .button-container:nth-child(1){
+    padding-right: 2px !important;
+  }
+  
+  .button-container:nth-child(2){
+    padding-left: 2px !important;
+  }
+
+}
+
+.button-container button {
+  background-color: black;
+  color:white;
+  border-color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cancel-row {
+  margin-bottom: 20px;
+}
+
+.cancel-button, .submit-search-button{
+  font-size: 36px;
+  border: none !important;
+  background-color:rgb(187, 136, 212);
+}
+
+.cancel-button:hover, .submit-search-button:hover{
+  background-color:rgb(187, 136, 212);
+  color: rgb(221, 216, 216);
+  outline: none !important;
+}
+
+.btn:focus , .btn:active{
+  outline: none !important;
+}
+
+.cancel-button:focus, .submit-search-button:focus{
+  background-color:rgb(187, 136, 212) !important;
+  color: black !important;
+}
+
+.search-button-row {
+  margin-top: 20px;
+}
+
+.search-text-row{
+  margin-top: 20px;
+}
+
+.wiki-search-text{
+  border-radius: 0px !important;
+}
+
+.hidden-row{
+  display: none;
+}
+
+.wiki-result-row{
+  padding:20px;
+  margin-top: 10px;
+  background-color: rgb(248, 248, 248);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wiki-result-row:hover{
+  cursor: pointer;
+  background-color: black;
+  color:rgb(248, 248, 248);
+}
+
+.no-result-found-row h3{
+  font-size: 32px;
+  padding: 50px;
+}
