@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.hidden-row {
+  display: none;
+}
+
+.title-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title-row h1{
+  font-family: 'Russo One', sans-serif;
+}
+
+.filters-row {
+  margin-top: 50px;
+}
+
+.glyphicon-search {
+  color:black;
+  text-align: left;
+}
+
+.filter-btn {
+  border-radius: 15px;
+}
+
+
+#all-filter-button {
+  background-color: rgb(134, 78, 185);
+}
+
+#online-filter-button {
+  background-color: rgb(87, 165, 87);
+}
+
+#offline-filter-button{
+  background-color: firebrick;
+}
+
+.filter-btn:hover {
+  background-color: rgb(221, 213, 213) !important;
+}
+
+.selected-filter {
+  background-color: rgb(201, 201, 201) !important;
+  outline: none !important;
+  font-weight: bold;
+  border: 3px solid rgb(97, 97, 97);
+}
+
+.streamer-info-name a {
+  text-decoration: none;
+  color: rgb(182, 182, 182);
+}
+
+.streamer-info-name a:hover {
+  color:white;
+}
+
+.streamers-container {
+  margin-top: 30px;
+  font-family: 'Russo One', sans-serif;
+  color:rgb(182, 182, 182);
+}
+
+.streamers-table-row {
+  border-top: 1px solid white;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+.offline-icon {
+  color:firebrick;
+  font-size: 24px;
+}
+
+.online-icon {
+  color: rgb(87, 165, 87);
+  font-size: 24px;
+}
+
+.details-text {
+  padding-top:2px;
+}
+
+.details-icon {
+  padding-top:3px;
+}
+
+.details-icon:hover{
+  cursor: pointer;
+  color: white;
+}
+
+
+
+

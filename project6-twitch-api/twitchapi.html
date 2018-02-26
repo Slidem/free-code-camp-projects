@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- boostrap and jquerry -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Russo+One" rel="stylesheet">
+
+  <link rel="stylesheet" href="twitchapi.css">
+  <script src="twitchapi.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row text-center title-row">
+      <h1>TWITCH STREAMERS</h1>
+    </div>
+    <div class="row filters-row">
+      <div class="col-md-offset-3 col-md-2">
+        <button id="all-filter-button" class="btn btn-block filter-btn selected-filter">All</button>
+      </div>
+      <div class="col-md-2">
+        <button id="online-filter-button" class="btn btn-block filter-btn">Online</button>
+      </div>
+      <div class="col-md-2">
+        <button id="offline-filter-button" class="btn btn-block filter-btn">Offline</button>
+      </div>
+    </div>
+    <div class="row streamers-container container">
+      <div class="col-md-offset-2 col-md-8 container">
+        <div class="row streamers-table-header">
+          <div class="col-md-2">
+            <h3>Streamers</h3>
+          </div>
+          <div class="col-md-offset-8 col-md-2">
+            <h3>Status</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
