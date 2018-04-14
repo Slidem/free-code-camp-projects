@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro clock</title>
+
+  <!-- boostrap and jquerry -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+
+  <link rel="stylesheet" href="pomodoro.css">
+  <script src="pomodoro.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="commands-row row">
+          <div class="col-md-4 start-button-container">
+            <button id="start-button" class="btn btn-success btn-circle btn-command"> START </button>
+          </div>
+          <div class="col-md-4 stop-button-container">
+            <button id="stop-button" class="btn btn-danger btn-circle btn-command"> STOP </button>
+          </div>
+          <div class="col-md-4 reset-button-container">
+            <button id="reset-button" class="btn btn-info btn-circle btn-command"> RESET </button>
+          </div>
+        </div>
+        <div class="time-settings-row row">
+          <div class="time-settings-container">
+            <div class="time-settings-component timer-break-component">
+              <div class="row timer-component-label">break-length</div>
+              <div class="row timer-up">
+                <button class="timer-command btn btn-timer-up">
+                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="row timer">5</div>
+              <div class="row timer-down">
+                <button class="timer-command btn btn-timer-down">
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+            <div class="time-settings-component timer-session-component">
+              <div class="row timer-component-label">session-length</div>
+              <div class="row timer-up">
+                <button class="timer-command btn btn-timer-up">
+                  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="row timer">25</div>
+              <div class="row timer-down">
+                <button class="timer-command btn btn-timer-down">
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time-display-row row timer-start-state">
+          <div class="col-md-4 timer-container col-md-offset-1"><span id="timer-clock">25:00</span></div>
+          <div class="col-md-4 col-md-offset-2"><span id="timer-status">session</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
