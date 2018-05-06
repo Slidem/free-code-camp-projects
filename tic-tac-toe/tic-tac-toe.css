@@ -1,0 +1,90 @@
+body {
+  font-family: 'Gugi', cursive;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.container-fluid{
+  margin-top: 3rem;
+}
+
+.game-selection-container {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.type-selection-div {
+  background: rgb(167, 165, 165);
+  border-radius: 0.8em;
+  height: 9rem;
+}
+
+.selection-div{
+  display:block;
+  float:left;
+  width: 30%;
+  margin-right: 3%;
+  padding-top: 2.8rem;
+  font-size: 2.2rem;
+}
+
+.type-selection-div:hover{
+  background-color: rgb(99, 98, 98);
+  color:white;
+  cursor: pointer;
+}
+
+
+.x-selection-div {
+  margin-left: 2%;
+}
+
+.o-selection-div {
+  margin-right: 1%;
+}
+
+.board-container {
+  background-color: black;
+  border-radius: 2rem;
+  margin-top: 8rem;
+  padding: 2rem;
+  padding-left: 2.2rem;
+}
+
+.clear{
+  clear: both;
+}
+
+.board-cell{
+  display: block;
+  float: left;
+  height:14rem;
+  width: 33%;
+  border: 0.4rem solid white;
+  text-align: center;
+  color:white;
+  font-size: 8rem;
+}
+
+.board-cell-left {
+  border-left: none;
+}
+
+.board-cell-right {
+  border-right: none;
+}
+
+.board-cell-top {
+  border-top: none;
+}
+
+.board-cell-bottom {
+  border-bottom: none;
+}
+
+
+
+
+
