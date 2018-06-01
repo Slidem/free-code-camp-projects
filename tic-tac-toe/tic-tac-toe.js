@@ -168,7 +168,7 @@ class Board {
     return colCells;
   }
 
-  getDiagonals(){
+  getDiagonals() {
     return this.getCellDiagonal(this._cells[1][1]);
   }
 
@@ -346,7 +346,7 @@ class AIMove {
     } else if (availableCells === 8) {
       let oponentCells = this._board.getOtherPlayerCells(this._player);
       let oponentCell = oponentCells[0];
-      if(this._cellIsOnMiddle(oponentCell) && this._cellIsOnCorner(this._cell)){
+      if (this._cellIsOnMiddle(oponentCell) && this._cellIsOnCorner(this._cell)) {
         return Priorities.SECOND_MOVE_OPONENT_MIDDLE;
       }
       if (this._cellIsOnCorner(oponentCell) && this._cellIsOnMiddle(this._cell)) {
@@ -380,14 +380,14 @@ class AIMove {
     return this._fullLines(line => this._cellsOccupiedByPlayer(line)) == 2;
   }
 
-  _opponentCorners(){
-     let playerCells = this._board.getPlayerCells(this._player);
-     let diagonals = this._board.getDiagonals().diagonal;
-     let opponentHasCellsOnCorner = this._getLineCellsBasedOnCriteria(diagonals[0],  cell => cell.isOccupiedByOponent(this._player)) == 2 || this._getLineCellsBasedOnCriteria(diagonals[1],  cell => cell.isOccupiedByOponent(this._player)) == 2;
-     if(playerCells.length === 1 && !this._cellIsOnCorner(this._cell) && !this._cellIsOnMiddle(this._cell) && opponentHasCellsOnCorner){
+  _opponentCorners() {
+    let playerCells = this._board.getPlayerCells(this._player);
+    let diagonals = this._board.getDiagonals().diagonal;
+    let opponentHasCellsOnCorner = this._getLineCellsBasedOnCriteria(diagonals[0], cell => cell.isOccupiedByOponent(this._player)) == 2 || this._getLineCellsBasedOnCriteria(diagonals[1], cell => cell.isOccupiedByOponent(this._player)) == 2;
+    if (playerCells.length === 1 && !this._cellIsOnCorner(this._cell) && !this._cellIsOnMiddle(this._cell) && opponentHasCellsOnCorner) {
       return true;
-     }
-     return false;
+    }
+    return false;
   }
 
   _possibleLine() {
@@ -395,10 +395,10 @@ class AIMove {
       let cellRow = this._board.getCellRow(this._cell);
       let cellColumn = this._board.getCellColumn(this._cell);
       let cellDiagonal = this._board.getCellDiagonal(this._cell).diagonal;
-      return !this._lineContainsOponentCell(cellRow) && this._lineContainsPlayerCell(cellRow) || 
-             !this._lineContainsOponentCell(cellColumn) && this._lineContainsPlayerCell(cellColumn) ||
-             !this._lineContainsOponentCell(cellDiagonal) && this._lineContainsPlayerCell(cellDiagonal) && (this._lineContainsOponentCell(cellRow) || this._lineContainsOponentCell(cellColumn));
-    } 
+      return !this._lineContainsOponentCell(cellRow) && this._lineContainsPlayerCell(cellRow) ||
+        !this._lineContainsOponentCell(cellColumn) && this._lineContainsPlayerCell(cellColumn) ||
+        !this._lineContainsOponentCell(cellDiagonal) && this._lineContainsPlayerCell(cellDiagonal) && (this._lineContainsOponentCell(cellRow) && this._lineContainsOponentCell(cellColumn));
+    }
     return false;
   }
 
@@ -546,18 +546,15 @@ function getHumanObserver() {
   return new MoveObserver(function (board, row, col, player) {
 
     if (!board.isOnWin()) {
-      let added = board.put(row, col, player);
-      if (added) {
-        if (board.isDraw()) {
-          makeDraw();
-          return;
-        }
-        computeAiMove(board, AI);
-      } else if (board.isOnWin()) {
-        //should never happen. Humans can never win against AI. Most likely they will draw :)
+      board.put(row, col, player);
+      if (board.isOnWin()) {
         showWin(baord, player);
+      } else if (board.isDraw()) {
+        makeDraw();
+      } else {
+        computeAiMove(board, AI);
       }
-    }
+    } 
 
   });
 }
@@ -570,10 +567,10 @@ function getAiObserver() {
       setTimeout(function () {
         board.unlock();
         board.put(row, col, player);
-        if (board.isDraw()) {
-          makeDraw();
-        } else if(board.isOnWin()){
+        if (board.isOnWin()) {
           showWin(board, player);
+        } else if (board.isDraw()) {
+          makeDraw();
         }
       }, 1000);
     }

@@ -1,0 +1,306 @@
+body {
+  background-image: url("http://www.psdgraphics.com/file/oak-wood-background.jpg");
+  background-repeat: repeat;
+  font-family: 'Titan One', cursive;
+}
+
+.game-container{
+  background-color: rgb(224, 224, 224);
+  margin: auto;
+  width: 55rem;
+  margin-top:5rem;
+  height: 70rem;
+  border: 0.6rem solid rgb(82, 31, 31);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2), 0 1.2rem 3rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.game-title > h1{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.game-play-buttons{
+  margin-top: 5rem;
+}
+
+.game-play-buttons-container{
+  margin: auto;
+  width: 37rem;
+  height: 37rem;
+  background-color: rgb(88, 86, 86);
+  border-radius: 100%;
+  border: 0.6rem solid rgb(65, 62, 62);
+  padding:2.5%;
+}
+
+.game-play-buttons-row {
+  height: 17rem;
+  width: 100%;
+  display: block;
+}
+
+.game-play-buttons-row:nth-child(2) {
+  margin-top: 0.4rem;
+}
+
+
+.game-play-button {
+  height: 16rem;
+  width: 48.2%;
+  display: block;
+  float: left;
+  border: 0.6rem solid rgb(82, 79, 79);
+}
+
+.game-play-button:hover{
+  cursor: pointer;
+}
+
+.green {
+  border-top-left-radius: 100%;
+  background-color: rgb(22, 180, 22);
+}
+
+.red {
+  border-top-right-radius: 100%;
+  margin-left: 3.5%;
+  background-color: rgb(187, 53, 53);
+}
+
+.yellow {
+  border-bottom-left-radius: 100%;
+  background-color: rgb(228, 197, 96);
+}
+
+.blue {
+  border-bottom-right-radius: 100%;
+  margin-left: 3.5%;
+  background-color: rgb(117, 163, 248);
+}
+
+.green-light{
+  background-color: rgb(152, 214, 59);
+}
+
+.red-light{
+  background-color: red;
+}
+
+.yellow-light{
+  background-color:yellow;
+}
+
+.blue-light{
+  background-color: rgb(128, 200, 233);
+}
+
+.clear{
+  clear: both;
+}
+
+/* ************************ SWITCH CSS ****************************** */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: block;
+  float: left;
+  width: 60px;
+  height: 34px;
+  margin-top: 0.8rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(175, 94, 94);
+  border: 2px solid grey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(53, 168, 97);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(53, 168, 97);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* ************************ END OF SWITCH CSS ****************************** */
+
+.game-command-buttons{
+  margin-top: 2.5rem;
+}
+
+.game-commands-strict-led-row{
+  height: 1rem;
+}
+
+.strict-led{
+  background-color: rgb(114, 17, 17);
+  border: 2px solid black;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-left: 34.8rem;
+}
+
+.strict-led-enabled{
+  background-color: rgb(243, 24, 24);
+}
+
+.game-commands-button-row {
+  margin: auto;
+  width: 30rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.command-div {
+  display: block;
+  height: 6rem;
+  float: left;
+  width:4.8rem;
+  margin-left: 3rem;
+  font-family: 'Khand', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.command-div:nth-child(1) {
+  margin-left: 4.2rem;
+}
+
+.switch-div {
+  width: 6rem;
+}
+
+
+.round-button{
+  border: none;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 0.2rem solid grey;
+}
+
+.round-button:focus{
+  outline: none;
+}
+
+
+.round-button-start{
+  background-color: rgb(172, 58, 58);
+}
+
+.round-button-start-clicked {
+  background-color: red;
+}
+
+.round-button-strict{
+  background-color: rgb(216, 216, 58);
+}
+
+.round-button-strict-clicked {
+  background-color: yellow;
+}
+
+.button-label {
+  display:block;
+}
+
+.game-commands-label-row{
+  margin:auto;
+  width: 25rem;
+  text-align: center;
+  height: 2rem;
+}
+
+.game-commands-label-row div {
+  font-family: 'Khand', sans-serif;
+  font-weight: bolder;
+}
+
+.game-commands-label-row div:nth-child(1){
+  margin-left: 4rem;
+}
+
+.game-commands-label-row div:nth-child(2){
+  margin-left: 4.2rem;
+}
+
+.game-commands-label-row div:nth-child(3){
+  margin-left: 4.1rem;
+}
+
+.game-commands-counter-row{
+  margin-top: 2rem;
+  height: 6rem;
+}
+
+.counter{
+  display: block;
+  height: 4rem;
+  width: 5rem;
+  margin: auto;
+  border-radius: 1rem;
+  border: 2px solid grey;
+  background-color: rgb(88, 13, 13);
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(207, 153, 151);
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+}
+
+.counter-label{
+  margin: auto;
+  width: 5rem;
+  text-align: center;
+  font-family: 'Khand', sans-serif;
+  font-weight: bolder;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simon's game</title>
+
+  <!-- boostrap and jquerry -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="simons-game.css">
+  <script src="sound.js"></script>
+  <script src="display.js"></script>
+  <script src="utils.js"></script>
+  <script src="moves.js"></script>
+  <script src="behaviours.js"></script>
+  <script src="command-buttons-behaviour.js"></script>
+  <script src="game.js"></script>
+  <script src="simons-game.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khand|Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="game-title text-center">
+      <h1>Simon &reg;</h1>
+    </div>
+    <div class="game-play-buttons">
+      <div class="game-play-buttons-container">
+        <div class="game-play-buttons-row">
+          <div class="game-play-button green" id="green"></div>
+          <div class="game-play-button red" id="red"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="game-play-buttons-row">
+          <div class="game-play-button yellow" id="yellow"></div>
+          <div class="game-play-button blue" id="blue"></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="game-command-buttons">
+      <div class="game-commands-strict-led-row">
+        <div class="strict-led"></div>
+      </div>
+      <div class="game-commands-button-row">
+        <div class="command-div">
+          <button class="round-button round-button-start command"></button>
+          <div class="button-label">start</div>
+        </div>
+        <div class="command-div switch-div">
+          <label for="game-switch" class="switch command">
+            <input type="checkbox" name="game-switch" id="game-switch"/>
+            <span class="slider round"></span>
+          </label>
+          <div class="button-label">on / off</div>
+        </div>
+        <div class="command-div">
+            <button class="round-button round-button-strict command"></button>  
+            <div class="button-label">strict</div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="game-commands-counter-row">
+        <div class="counter" id="display"></div>
+        <div class="counter-label">count</div>
+        <div class="clear"></div>
+      </div>
+
+      </label>
+    </div>
+  </div>
+</body>
+
+</html>
